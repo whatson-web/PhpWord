@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\ComplexType;
+namespace WH\PhpWord\ComplexType;
 
 /**
  * Visibility of Annotation Types

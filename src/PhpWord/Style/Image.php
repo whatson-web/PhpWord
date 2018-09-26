@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Style;
+namespace WH\PhpWord\Style;
 
 /**
  * Image and memory image style

@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Metadata;
+namespace WH\PhpWord\Metadata;
 
 use PhpOffice\Common\Microsoft\PasswordEncoder;
-use PhpOffice\PhpWord\SimpleType\DocProtect;
+use WH\PhpWord\SimpleType\DocProtect;
 
 /**
  * Document protection class
@@ -51,7 +51,7 @@ class Protection
     private $spinCount = 100000;
 
     /**
-     * Cryptographic Hashing Algorithm (see constants defined in \PhpOffice\PhpWord\Shared\Microsoft\PasswordEncoder)
+     * Cryptographic Hashing Algorithm (see constants defined in \WH\PhpWord\Shared\Microsoft\PasswordEncoder)
      *
      * @var string
      */
@@ -89,7 +89,7 @@ class Protection
     /**
      * Set editing protection
      *
-     * @param string $editing Any value of \PhpOffice\PhpWord\SimpleType\DocProtect
+     * @param string $editing Any value of \WH\PhpWord\SimpleType\DocProtect
      * @return self
      */
     public function setEditing($editing = null)

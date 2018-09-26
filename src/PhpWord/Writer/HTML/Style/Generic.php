@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\HTML\Style;
+namespace WH\PhpWord\Writer\HTML\Style;
 
 /**
  * Generic style writer

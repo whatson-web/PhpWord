@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Reader\RTF;
+namespace WH\PhpWord\Reader\RTF;
 
-use PhpOffice\PhpWord\PhpWord;
-use PhpOffice\PhpWord\SimpleType\Jc;
+use WH\PhpWord\PhpWord;
+use WH\PhpWord\SimpleType\Jc;
 
 /**
  * RTF document reader
@@ -41,21 +41,21 @@ class Document
     /**
      * PhpWord object
      *
-     * @var \PhpOffice\PhpWord\PhpWord
+     * @var \WH\PhpWord\PhpWord
      */
     private $phpWord;
 
     /**
      * Section object
      *
-     * @var \PhpOffice\PhpWord\Element\Section
+     * @var \WH\PhpWord\Element\Section
      */
     private $section;
 
     /**
      * Textrun object
      *
-     * @var \PhpOffice\PhpWord\Element\TextRun
+     * @var \WH\PhpWord\Element\TextRun
      */
     private $textrun;
 
@@ -130,7 +130,7 @@ class Document
      * - Builds control words and control symbols
      * - Pushes every other character into the text queue
      *
-     * @param \PhpOffice\PhpWord\PhpWord $phpWord
+     * @param \WH\PhpWord\PhpWord $phpWord
      * @todo Use `fread` stream for scalability
      */
     public function read(PhpWord $phpWord)

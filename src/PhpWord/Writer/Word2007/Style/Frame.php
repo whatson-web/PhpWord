@@ -15,11 +15,11 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\Word2007\Style;
+namespace WH\PhpWord\Writer\Word2007\Style;
 
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpWord\Style\Frame as FrameStyle;
-use PhpOffice\PhpWord\Writer\Word2007\Element\ParagraphAlignment;
+use WH\PhpWord\Style\Frame as FrameStyle;
+use WH\PhpWord\Writer\Word2007\Element\ParagraphAlignment;
 
 /**
  * Frame style writer
@@ -108,7 +108,7 @@ class Frame extends AbstractStyle
      * Write wrap.
      *
      * @param \PhpOffice\Common\XMLWriter $xmlWriter
-     * @param \PhpOffice\PhpWord\Style\Frame $style
+     * @param \WH\PhpWord\Style\Frame $style
      * @param string $wrap
      */
     private function writeWrap(XMLWriter $xmlWriter, FrameStyle $style, $wrap)
@@ -148,7 +148,7 @@ class Frame extends AbstractStyle
     /**
      * Get style values in associative array
      *
-     * @param \PhpOffice\PhpWord\Style\Frame $style
+     * @param \WH\PhpWord\Style\Frame $style
      * @param array $properties
      * @param string $suffix
      * @return array

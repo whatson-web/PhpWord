@@ -15,25 +15,25 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Style;
+namespace WH\PhpWord\Style;
 
-use PhpOffice\PhpWord\ComplexType\TblWidth as TblWidthComplexType;
-use PhpOffice\PhpWord\SimpleType\Jc;
-use PhpOffice\PhpWord\SimpleType\JcTable;
-use PhpOffice\PhpWord\SimpleType\TblWidth;
+use WH\PhpWord\ComplexType\TblWidth as TblWidthComplexType;
+use WH\PhpWord\SimpleType\Jc;
+use WH\PhpWord\SimpleType\JcTable;
+use WH\PhpWord\SimpleType\TblWidth;
 
 class Table extends Border
 {
     /**
-     * @deprecated Use \PhpOffice\PhpWord\SimpleType\TblWidth::AUTO instead
+     * @deprecated Use \WH\PhpWord\SimpleType\TblWidth::AUTO instead
      */
     const WIDTH_AUTO = 'auto'; // Automatically determined width
     /**
-     * @deprecated Use \PhpOffice\PhpWord\SimpleType\TblWidth::PERCENT instead
+     * @deprecated Use \WH\PhpWord\SimpleType\TblWidth::PERCENT instead
      */
     const WIDTH_PERCENT = 'pct'; // Width in fiftieths (1/50) of a percent (1% = 50 unit)
     /**
-     * @deprecated Use \PhpOffice\PhpWord\SimpleType\TblWidth::TWIP instead
+     * @deprecated Use \WH\PhpWord\SimpleType\TblWidth::TWIP instead
      */
     const WIDTH_TWIP = 'dxa'; // Width in twentieths (1/20) of a point (twip)
 
@@ -61,7 +61,7 @@ class Table extends Border
     /**
      * Style for first row
      *
-     * @var \PhpOffice\PhpWord\Style\Table
+     * @var \WH\PhpWord\Style\Table
      */
     private $firstRowStyle;
 
@@ -124,7 +124,7 @@ class Table extends Border
     /**
      * Shading
      *
-     * @var \PhpOffice\PhpWord\Style\Shading
+     * @var \WH\PhpWord\Style\Shading
      */
     private $shading;
 
@@ -156,7 +156,7 @@ class Table extends Border
     /**
      * Position
      *
-     * @var \PhpOffice\PhpWord\Style\TablePosition
+     * @var \WH\PhpWord\Style\TablePosition
      */
     private $position;
 
@@ -210,7 +210,7 @@ class Table extends Border
     /**
      * Set first row
      *
-     * @return \PhpOffice\PhpWord\Style\Table
+     * @return \WH\PhpWord\Style\Table
      */
     public function getFirstRow()
     {
@@ -528,7 +528,7 @@ class Table extends Border
     /**
      * Get shading
      *
-     * @return \PhpOffice\PhpWord\Style\Shading
+     * @return \WH\PhpWord\Style\Shading
      */
     public function getShading()
     {
@@ -716,7 +716,7 @@ class Table extends Border
     /**
      * Get position
      *
-     * @return \PhpOffice\PhpWord\Style\TablePosition
+     * @return \WH\PhpWord\Style\TablePosition
      */
     public function getPosition()
     {

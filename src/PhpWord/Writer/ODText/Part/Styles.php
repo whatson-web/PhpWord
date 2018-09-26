@@ -15,11 +15,11 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\ODText\Part;
+namespace WH\PhpWord\Writer\ODText\Part;
 
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpWord\Settings;
-use PhpOffice\PhpWord\Style;
+use WH\PhpWord\Settings;
+use WH\PhpWord\Style;
 
 /**
  * ODText styles part writer: styles.xml
@@ -124,7 +124,7 @@ class Styles extends AbstractPart
                 if ($style->isAuto() === false) {
                     $styleClass = str_replace('\\Style\\', '\\Writer\\ODText\\Style\\', get_class($style));
                     if (class_exists($styleClass)) {
-                        /** @var $styleWriter \PhpOffice\PhpWord\Writer\ODText\Style\AbstractStyle Type hint */
+                        /** @var $styleWriter \WH\PhpWord\Writer\ODText\Style\AbstractStyle Type hint */
                         $styleWriter = new $styleClass($xmlWriter, $style);
                         $styleWriter->write();
                     }

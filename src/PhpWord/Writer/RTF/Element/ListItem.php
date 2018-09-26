@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\RTF\Element;
+namespace WH\PhpWord\Writer\RTF\Element;
 
 /**
  * ListItem element RTF writer; extends from text

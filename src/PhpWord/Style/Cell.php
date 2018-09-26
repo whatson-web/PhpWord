@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Style;
+namespace WH\PhpWord\Style;
 
-use PhpOffice\PhpWord\SimpleType\TblWidth;
+use WH\PhpWord\SimpleType\TblWidth;
 
 /**
  * Table cell style
@@ -109,7 +109,7 @@ class Cell extends Border
     /**
      * Shading
      *
-     * @var \PhpOffice\PhpWord\Style\Shading
+     * @var \WH\PhpWord\Style\Shading
      */
     private $shading;
 
@@ -250,7 +250,7 @@ class Cell extends Border
     /**
      * Get shading
      *
-     * @return \PhpOffice\PhpWord\Style\Shading
+     * @return \WH\PhpWord\Style\Shading
      */
     public function getShading()
     {

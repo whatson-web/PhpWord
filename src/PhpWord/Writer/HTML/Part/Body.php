@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\HTML\Part;
+namespace WH\PhpWord\Writer\HTML\Part;
 
-use PhpOffice\PhpWord\Writer\HTML\Element\Container;
-use PhpOffice\PhpWord\Writer\HTML\Element\TextRun as TextRunWriter;
+use WH\PhpWord\Writer\HTML\Element\Container;
+use WH\PhpWord\Writer\HTML\Element\TextRun as TextRunWriter;
 
 /**
  * RTF body part writer
@@ -58,7 +58,7 @@ class Body extends AbstractPart
      */
     private function writeNotes()
     {
-        /** @var \PhpOffice\PhpWord\Writer\HTML $parentWriter Type hint */
+        /** @var \WH\PhpWord\Writer\HTML $parentWriter Type hint */
         $parentWriter = $this->getParentWriter();
         $phpWord = $parentWriter->getPhpWord();
         $notes = $parentWriter->getNotes();

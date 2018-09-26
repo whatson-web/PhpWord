@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\PDF;
+namespace WH\PhpWord\Writer\PDF;
 
 use Dompdf\Dompdf as DompdfLib;
-use PhpOffice\PhpWord\Writer\WriterInterface;
+use WH\PhpWord\Writer\WriterInterface;
 
 /**
  * DomPDF writer

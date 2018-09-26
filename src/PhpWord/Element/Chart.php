@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Element;
+namespace WH\PhpWord\Element;
 
-use PhpOffice\PhpWord\Style\Chart as ChartStyle;
+use WH\PhpWord\Style\Chart as ChartStyle;
 
 /**
  * Chart element
@@ -50,7 +50,7 @@ class Chart extends AbstractElement
     /**
      * Chart style
      *
-     * @var \PhpOffice\PhpWord\Style\Chart
+     * @var \WH\PhpWord\Style\Chart
      */
     private $style;
 
@@ -120,7 +120,7 @@ class Chart extends AbstractElement
     /**
      * Get chart style
      *
-     * @return \PhpOffice\PhpWord\Style\Chart
+     * @return \WH\PhpWord\Style\Chart
      */
     public function getStyle()
     {

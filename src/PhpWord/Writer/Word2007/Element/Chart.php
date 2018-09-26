@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\Word2007\Element;
+namespace WH\PhpWord\Writer\Word2007\Element;
 
-use PhpOffice\PhpWord\Element\Chart as ChartElement;
+use WH\PhpWord\Element\Chart as ChartElement;
 
 /**
  * Chart element writer

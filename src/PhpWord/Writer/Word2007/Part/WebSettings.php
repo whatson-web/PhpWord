@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\Word2007\Part;
+namespace WH\PhpWord\Writer\Word2007\Part;
 
 /**
  * Word2007 web settings part writer: word/webSettings.xml

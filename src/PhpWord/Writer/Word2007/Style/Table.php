@@ -15,12 +15,12 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\Word2007\Style;
+namespace WH\PhpWord\Writer\Word2007\Style;
 
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpWord\SimpleType\TblWidth;
-use PhpOffice\PhpWord\Style\Table as TableStyle;
-use PhpOffice\PhpWord\Writer\Word2007\Element\TableAlignment;
+use WH\PhpWord\SimpleType\TblWidth;
+use WH\PhpWord\Style\Table as TableStyle;
+use WH\PhpWord\Writer\Word2007\Element\TableAlignment;
 
 /**
  * Table style writer
@@ -60,7 +60,7 @@ class Table extends AbstractStyle
      * Write full style.
      *
      * @param \PhpOffice\Common\XMLWriter $xmlWriter
-     * @param \PhpOffice\PhpWord\Style\Table $style
+     * @param \WH\PhpWord\Style\Table $style
      */
     private function writeStyle(XMLWriter $xmlWriter, TableStyle $style)
     {
@@ -117,7 +117,7 @@ class Table extends AbstractStyle
      * Write margin.
      *
      * @param \PhpOffice\Common\XMLWriter $xmlWriter
-     * @param \PhpOffice\PhpWord\Style\Table $style
+     * @param \WH\PhpWord\Style\Table $style
      */
     private function writeMargin(XMLWriter $xmlWriter, TableStyle $style)
     {
@@ -136,7 +136,7 @@ class Table extends AbstractStyle
      * Write border.
      *
      * @param \PhpOffice\Common\XMLWriter $xmlWriter
-     * @param \PhpOffice\PhpWord\Style\Table $style
+     * @param \WH\PhpWord\Style\Table $style
      */
     private function writeBorder(XMLWriter $xmlWriter, TableStyle $style)
     {
@@ -175,7 +175,7 @@ class Table extends AbstractStyle
      * Write row style.
      *
      * @param \PhpOffice\Common\XMLWriter $xmlWriter
-     * @param \PhpOffice\PhpWord\Style\Table $style
+     * @param \WH\PhpWord\Style\Table $style
      */
     private function writeFirstRow(XMLWriter $xmlWriter, TableStyle $style)
     {
@@ -194,7 +194,7 @@ class Table extends AbstractStyle
      * Write shading.
      *
      * @param \PhpOffice\Common\XMLWriter $xmlWriter
-     * @param \PhpOffice\PhpWord\Style\Table $style
+     * @param \WH\PhpWord\Style\Table $style
      */
     private function writeShading(XMLWriter $xmlWriter, TableStyle $style)
     {

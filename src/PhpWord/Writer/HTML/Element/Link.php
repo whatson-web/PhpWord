@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\HTML\Element;
+namespace WH\PhpWord\Writer\HTML\Element;
 
-use PhpOffice\PhpWord\Settings;
+use WH\PhpWord\Settings;
 
 /**
  * Link element HTML writer
@@ -33,7 +33,7 @@ class Link extends Text
      */
     public function write()
     {
-        if (!$this->element instanceof \PhpOffice\PhpWord\Element\Link) {
+        if (!$this->element instanceof \WH\PhpWord\Element\Link) {
             return '';
         }
 

@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Shared;
+namespace WH\PhpWord\Shared;
 
 abstract class AbstractEnum
 {

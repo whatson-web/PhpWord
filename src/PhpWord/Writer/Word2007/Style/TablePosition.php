@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\Word2007\Style;
+namespace WH\PhpWord\Writer\Word2007\Style;
 
 /**
  * TablePosition style writer
@@ -28,7 +28,7 @@ class TablePosition extends AbstractStyle
     public function write()
     {
         $style = $this->getStyle();
-        if (!$style instanceof \PhpOffice\PhpWord\Style\TablePosition) {
+        if (!$style instanceof \WH\PhpWord\Style\TablePosition) {
             return;
         }
 

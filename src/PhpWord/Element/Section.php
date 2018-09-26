@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Element;
+namespace WH\PhpWord\Element;
 
-use PhpOffice\PhpWord\ComplexType\FootnoteProperties;
-use PhpOffice\PhpWord\Style\Section as SectionStyle;
+use WH\PhpWord\ComplexType\FootnoteProperties;
+use WH\PhpWord\Style\Section as SectionStyle;
 
 class Section extends AbstractContainer
 {
@@ -30,7 +30,7 @@ class Section extends AbstractContainer
     /**
      * Section style
      *
-     * @var \PhpOffice\PhpWord\Style\Section
+     * @var \WH\PhpWord\Style\Section
      */
     private $style;
 
@@ -84,7 +84,7 @@ class Section extends AbstractContainer
     /**
      * Get section style
      *
-     * @return \PhpOffice\PhpWord\Style\Section
+     * @return \WH\PhpWord\Style\Section
      */
     public function getStyle()
     {
@@ -204,7 +204,7 @@ class Section extends AbstractContainer
 
         if (in_array($type, array(Header::AUTO, Header::FIRST, Header::EVEN))) {
             $index = count($collection);
-            /** @var \PhpOffice\PhpWord\Element\AbstractContainer $container Type hint */
+            /** @var \WH\PhpWord\Element\AbstractContainer $container Type hint */
             $container = new $containerClass($this->sectionId, ++$index, $type);
             $container->setPhpWord($this->phpWord);
 
@@ -234,7 +234,7 @@ class Section extends AbstractContainer
      *
      * @deprecated 0.12.0
      *
-     * @return \PhpOffice\PhpWord\Style\Section
+     * @return \WH\PhpWord\Style\Section
      *
      * @codeCoverageIgnore
      */

@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\HTML\Element;
+namespace WH\PhpWord\Writer\HTML\Element;
 
-use PhpOffice\PhpWord\Settings;
+use WH\PhpWord\Settings;
 
 /**
  * TextRun element HTML writer
@@ -33,7 +33,7 @@ class Title extends AbstractElement
      */
     public function write()
     {
-        if (!$this->element instanceof \PhpOffice\PhpWord\Element\Title) {
+        if (!$this->element instanceof \WH\PhpWord\Element\Title) {
             return '';
         }
 
@@ -44,7 +44,7 @@ class Title extends AbstractElement
             if (Settings::isOutputEscapingEnabled()) {
                 $text = $this->escaper->escapeHtml($text);
             }
-        } elseif ($text instanceof \PhpOffice\PhpWord\Element\AbstractContainer) {
+        } elseif ($text instanceof \WH\PhpWord\Element\AbstractContainer) {
             $writer = new Container($this->parentWriter, $this->element);
             $text = $writer->write();
         }

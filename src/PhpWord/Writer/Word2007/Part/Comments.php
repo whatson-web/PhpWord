@@ -15,11 +15,11 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\Word2007\Part;
+namespace WH\PhpWord\Writer\Word2007\Part;
 
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpWord\Element\Comment;
-use PhpOffice\PhpWord\Writer\Word2007\Element\Container;
+use WH\PhpWord\Element\Comment;
+use WH\PhpWord\Writer\Word2007\Element\Container;
 
 /**
  * Word2007 comments part writer: word/comments.xml
@@ -29,7 +29,7 @@ class Comments extends AbstractPart
     /**
      * Comments collection to be written
      *
-     * @var \PhpOffice\PhpWord\Element\Comment[]
+     * @var \WH\PhpWord\Element\Comment[]
      */
     protected $elements;
 
@@ -71,7 +71,7 @@ class Comments extends AbstractPart
      * Write comment item.
      *
      * @param \PhpOffice\Common\XMLWriter $xmlWriter
-     * @param \PhpOffice\PhpWord\Element\Comment $comment
+     * @param \WH\PhpWord\Element\Comment $comment
      */
     protected function writeComment(XMLWriter $xmlWriter, Comment $comment)
     {
@@ -92,7 +92,7 @@ class Comments extends AbstractPart
     /**
      * Set element
      *
-     * @param \PhpOffice\PhpWord\Element\Comment[] $elements
+     * @param \WH\PhpWord\Element\Comment[] $elements
      * @return self
      */
     public function setElements($elements)

@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord;
+namespace WH\PhpWord;
 
 /**
- * @deprecated 0.12.0 Use `\PhpOffice\PhpWord\TemplateProcessor` instead.
+ * @deprecated 0.12.0 Use `\WH\PhpWord\TemplateProcessor` instead.
  *
  * @codeCoverageIgnore
  */

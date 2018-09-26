@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\Word2007\Element;
+namespace WH\PhpWord\Writer\Word2007\Element;
 
-use PhpOffice\PhpWord\Element\TrackChange;
+use WH\PhpWord\Element\TrackChange;
 
 /**
  * Text element writer
@@ -33,7 +33,7 @@ class Text extends AbstractElement
     {
         $xmlWriter = $this->getXmlWriter();
         $element = $this->getElement();
-        if (!$element instanceof \PhpOffice\PhpWord\Element\Text) {
+        if (!$element instanceof \WH\PhpWord\Element\Text) {
             return;
         }
 

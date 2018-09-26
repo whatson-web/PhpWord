@@ -15,11 +15,11 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord;
+namespace WH\PhpWord;
 
-use PhpOffice\PhpWord\Exception\Exception;
-use PhpOffice\PhpWord\Reader\ReaderInterface;
-use PhpOffice\PhpWord\Writer\WriterInterface;
+use WH\PhpWord\Exception\Exception;
+use WH\PhpWord\Reader\ReaderInterface;
+use WH\PhpWord\Writer\WriterInterface;
 
 abstract class IOFactory
 {
@@ -29,7 +29,7 @@ abstract class IOFactory
      * @param PhpWord $phpWord
      * @param string $name
      *
-     * @throws \PhpOffice\PhpWord\Exception\Exception
+     * @throws \WH\PhpWord\Exception\Exception
      *
      * @return WriterInterface
      */
@@ -63,11 +63,11 @@ abstract class IOFactory
      *
      * @param string $type
      * @param string $name
-     * @param \PhpOffice\PhpWord\PhpWord $phpWord
+     * @param \WH\PhpWord\PhpWord $phpWord
      *
-     * @throws \PhpOffice\PhpWord\Exception\Exception
+     * @throws \WH\PhpWord\Exception\Exception
      *
-     * @return \PhpOffice\PhpWord\Writer\WriterInterface|\PhpOffice\PhpWord\Reader\ReaderInterface
+     * @return \WH\PhpWord\Writer\WriterInterface|\WH\PhpWord\Reader\ReaderInterface
      */
     private static function createObject($type, $name, $phpWord = null)
     {
@@ -83,11 +83,11 @@ abstract class IOFactory
      *
      * @param string $filename The name of the file
      * @param string $readerName
-     * @return \PhpOffice\PhpWord\PhpWord $phpWord
+     * @return \WH\PhpWord\PhpWord $phpWord
      */
     public static function load($filename, $readerName = 'Word2007')
     {
-        /** @var \PhpOffice\PhpWord\Reader\ReaderInterface $reader */
+        /** @var \WH\PhpWord\Reader\ReaderInterface $reader */
         $reader = self::createReader($readerName);
 
         return $reader->load($filename);

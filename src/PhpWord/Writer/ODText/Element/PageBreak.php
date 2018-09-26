@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\ODText\Element;
+namespace WH\PhpWord\Writer\ODText\Element;
 
 /**
  * PageBreak element writer

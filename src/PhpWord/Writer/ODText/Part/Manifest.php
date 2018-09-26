@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\ODText\Part;
+namespace WH\PhpWord\Writer\ODText\Part;
 
-use PhpOffice\PhpWord\Media;
+use WH\PhpWord\Media;
 
 /**
  * ODText manifest part writer: META-INF/manifest.xml

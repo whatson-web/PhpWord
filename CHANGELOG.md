@@ -44,7 +44,7 @@ v0.15.0 (14 Jul 2018)
 
 ### Changed
 - Remove zend-stdlib dependency @Trainmaster #1284
-- The default unit for `\PhpOffice\PhpWord\Style\Image` changed from `px` to `pt`.
+- The default unit for `\WH\PhpWord\Style\Image` changed from `px` to `pt`.
 
 ### Miscelaneous
 - Drop GitHub pages, switch to coveralls for code coverage analysis @czosel #1360
@@ -57,7 +57,7 @@ This version brings compatibility with PHP 7.0 & 7.1
 ### Added
 - Possibility to control the footnote numbering - @troosan #1068
 - Image creation from string - @troosan #937
-- Introduced the `\PhpOffice\PhpWord\SimpleType\NumberFormat` simple type. - @troosan
+- Introduced the `\WH\PhpWord\SimpleType\NumberFormat` simple type. - @troosan
 - Support for ContextualSpacing - @postHawk #1088
 - Possiblity to hide spelling and/or grammatical errors - @troosan #542
 - Possiblity to set default document language as well as changing the language for each text element - @troosan #1108
@@ -106,12 +106,12 @@ It also introduces constants for horizontal alignment options, and resolves some
 Manual installation feature has been dropped since the release. Please, use [Composer](https://getcomposer.org/) to install PHPWord.
 
 ### Added
-- Introduced the `\PhpOffice\PhpWord\SimpleType\Jc` simple type. - @RomanSyroeshko
-- Introduced the `\PhpOffice\PhpWord\SimpleType\JcTable` simple type. - @RomanSyroeshko
-- Introduced writer for the "Paragraph Alignment" element (see `\PhpOffice\PhpWord\Writer\Word2007\Element\ParagraphAlignment`). - @RomanSyroeshko
-- Introduced writer for the "Table Alignment" element (see `\PhpOffice\PhpWord\Writer\Word2007\Element\TableAlignment`). - @RomanSyroeshko
+- Introduced the `\WH\PhpWord\SimpleType\Jc` simple type. - @RomanSyroeshko
+- Introduced the `\WH\PhpWord\SimpleType\JcTable` simple type. - @RomanSyroeshko
+- Introduced writer for the "Paragraph Alignment" element (see `\WH\PhpWord\Writer\Word2007\Element\ParagraphAlignment`). - @RomanSyroeshko
+- Introduced writer for the "Table Alignment" element (see `\WH\PhpWord\Writer\Word2007\Element\TableAlignment`). - @RomanSyroeshko
 - Supported indexed arrays in arguments of `TemplateProcessor::setValue()`. - @RomanSyroeshko #618
-- Introduced automatic output escaping for OOXML, ODF, HTML, and RTF. To turn the feature on use `phpword.ini` or `\PhpOffice\PhpWord\Settings`. - @RomanSyroeshko #483
+- Introduced automatic output escaping for OOXML, ODF, HTML, and RTF. To turn the feature on use `phpword.ini` or `\WH\PhpWord\Settings`. - @RomanSyroeshko #483
 - Supported processing of headers and footers in `TemplateProcessor::applyXslStyleSheet()`. - @RomanSyroeshko #335
 
 ### Changed
@@ -128,17 +128,17 @@ Use the correspondent `getAlignment` and `setAlignment` methods instead. - @Roma
 - `TCPDF` due to its limited HTML support. Use `DomPDF` or `MPDF` writer instead. - @RomanSyroeshko #399
 
 ### Removed
-- `\PhpOffice\PhpWord\Style\Alignment`. Style properties, which previously stored instances of this class, now deal with strings.
+- `\WH\PhpWord\Style\Alignment`. Style properties, which previously stored instances of this class, now deal with strings.
 In each case set of available string values is defined by the correspondent simple type. - @RomanSyroeshko
 - Manual installation support. Since the release we have dependencies on third party libraries,
 so installation via ZIP-archive download is not an option anymore. To install PHPWord use [Composer](https://getcomposer.org/).
- We also removed `\PhpOffice\PhpWord\Autoloader`, because the latter change made it completely useless.
+ We also removed `\WH\PhpWord\Autoloader`, because the latter change made it completely useless.
  Autoloaders provided by Composer are in use now (see `bootstrap.php`). - @RomanSyroeshko
-- `\PhpOffice\PhpWord\Shared\Drawing` replaced by `\PhpOffice\Common\Drawing`. - @Progi1984 #658
-- `\PhpOffice\PhpWord\Shared\Font`. - @Progi1984 #658
-- `\PhpOffice\PhpWord\Shared\String` replaced by `\PhpOffice\Common\Text`. - @Progi1984 @RomanSyroeshko #658
-- `\PhpOffice\PhpWord\Shared\XMLReader` replaced by `\PhpOffice\Common\XMLReader`. - @Progi1984 #658
-- `\PhpOffice\PhpWord\Shared\XMLWriter` replaced by `\PhpOffice\Common\XMLWriter`. - @Progi1984 @RomanSyroeshko #658
+- `\WH\PhpWord\Shared\Drawing` replaced by `\PhpOffice\Common\Drawing`. - @Progi1984 #658
+- `\WH\PhpWord\Shared\Font`. - @Progi1984 #658
+- `\WH\PhpWord\Shared\String` replaced by `\PhpOffice\Common\Text`. - @Progi1984 @RomanSyroeshko #658
+- `\WH\PhpWord\Shared\XMLReader` replaced by `\PhpOffice\Common\XMLReader`. - @Progi1984 #658
+- `\WH\PhpWord\Shared\XMLWriter` replaced by `\PhpOffice\Common\XMLWriter`. - @Progi1984 @RomanSyroeshko #658
 - `AbstractContainer::addMemoryImage()`. Use `AbstractContainer::addImage()` instead.
 
 ### Fixed

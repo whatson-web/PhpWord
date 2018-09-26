@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\Word2007\Style;
+namespace WH\PhpWord\Writer\Word2007\Style;
 
 use PhpOffice\Common\XMLWriter;
-use PhpOffice\PhpWord\Settings;
+use WH\PhpWord\Settings;
 
 /**
  * Style writer
@@ -37,7 +37,7 @@ abstract class AbstractStyle
     /**
      * Style; set protected for a while
      *
-     * @var string|\PhpOffice\PhpWord\Style\AbstractStyle
+     * @var string|\WH\PhpWord\Style\AbstractStyle
      */
     protected $style;
 
@@ -50,7 +50,7 @@ abstract class AbstractStyle
      * Create new instance.
      *
      * @param \PhpOffice\Common\XMLWriter $xmlWriter
-     * @param string|\PhpOffice\PhpWord\Style\AbstractStyle $style
+     * @param string|\WH\PhpWord\Style\AbstractStyle $style
      */
     public function __construct(XMLWriter $xmlWriter, $style = null)
     {
@@ -71,7 +71,7 @@ abstract class AbstractStyle
     /**
      * Get Style
      *
-     * @return string|\PhpOffice\PhpWord\Style\AbstractStyle
+     * @return string|\WH\PhpWord\Style\AbstractStyle
      */
     protected function getStyle()
     {
@@ -115,7 +115,7 @@ abstract class AbstractStyle
         if ($value !== null) {
             $class = 'PhpOffice\\PhpWord\\Writer\\Word2007\\Style\\' . $name;
 
-            /** @var \PhpOffice\PhpWord\Writer\Word2007\Style\AbstractStyle $writer */
+            /** @var \WH\PhpWord\Writer\Word2007\Style\AbstractStyle $writer */
             $writer = new $class($xmlWriter, $value);
             $writer->write();
         }

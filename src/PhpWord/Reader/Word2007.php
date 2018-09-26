@@ -15,11 +15,11 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Reader;
+namespace WH\PhpWord\Reader;
 
 use PhpOffice\Common\XMLReader;
-use PhpOffice\PhpWord\PhpWord;
-use PhpOffice\PhpWord\Shared\ZipArchive;
+use WH\PhpWord\PhpWord;
+use WH\PhpWord\Shared\ZipArchive;
 
 /**
  * Reader for Word2007
@@ -34,7 +34,7 @@ class Word2007 extends AbstractReader implements ReaderInterface
      * Loads PhpWord from file
      *
      * @param string $docFile
-     * @return \PhpOffice\PhpWord\PhpWord
+     * @return \WH\PhpWord\PhpWord
      */
     public function load($docFile)
     {
@@ -78,7 +78,7 @@ class Word2007 extends AbstractReader implements ReaderInterface
     /**
      * Read document part.
      *
-     * @param \PhpOffice\PhpWord\PhpWord $phpWord
+     * @param \WH\PhpWord\PhpWord $phpWord
      * @param array $relationships
      * @param string $partName
      * @param string $docFile
@@ -88,7 +88,7 @@ class Word2007 extends AbstractReader implements ReaderInterface
     {
         $partClass = "PhpOffice\\PhpWord\\Reader\\Word2007\\{$partName}";
         if (class_exists($partClass)) {
-            /** @var \PhpOffice\PhpWord\Reader\Word2007\AbstractPart $part Type hint */
+            /** @var \WH\PhpWord\Reader\Word2007\AbstractPart $part Type hint */
             $part = new $partClass($docFile, $xmlFile);
             $part->setRels($relationships);
             $part->read($phpWord);

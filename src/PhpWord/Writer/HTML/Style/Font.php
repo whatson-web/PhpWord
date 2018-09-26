@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\HTML\Style;
+namespace WH\PhpWord\Writer\HTML\Style;
 
-use PhpOffice\PhpWord\Style\Font as FontStyle;
+use WH\PhpWord\Style\Font as FontStyle;
 
 /**
  * Font style HTML writer

@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Reader;
+namespace WH\PhpWord\Reader;
 
 use PhpOffice\Common\XMLReader;
-use PhpOffice\PhpWord\PhpWord;
+use WH\PhpWord\PhpWord;
 
 /**
  * Reader for ODText
@@ -31,7 +31,7 @@ class ODText extends AbstractReader implements ReaderInterface
      * Loads PhpWord from file
      *
      * @param string $docFile
-     * @return \PhpOffice\PhpWord\PhpWord
+     * @return \WH\PhpWord\PhpWord
      */
     public function load($docFile)
     {
@@ -53,7 +53,7 @@ class ODText extends AbstractReader implements ReaderInterface
     /**
      * Read document part.
      *
-     * @param \PhpOffice\PhpWord\PhpWord $phpWord
+     * @param \WH\PhpWord\PhpWord $phpWord
      * @param array $relationships
      * @param string $partName
      * @param string $docFile
@@ -63,7 +63,7 @@ class ODText extends AbstractReader implements ReaderInterface
     {
         $partClass = "PhpOffice\\PhpWord\\Reader\\ODText\\{$partName}";
         if (class_exists($partClass)) {
-            /** @var \PhpOffice\PhpWord\Reader\ODText\AbstractPart $part Type hint */
+            /** @var \WH\PhpWord\Reader\ODText\AbstractPart $part Type hint */
             $part = new $partClass($docFile, $xmlFile);
             $part->setRels($relationships);
             $part->read($phpWord);

@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\Word2007\Element;
+namespace WH\PhpWord\Writer\Word2007\Element;
 
 /**
  * Link element writer
@@ -31,7 +31,7 @@ class Link extends Text
     {
         $xmlWriter = $this->getXmlWriter();
         $element = $this->getElement();
-        if (!$element instanceof \PhpOffice\PhpWord\Element\Link) {
+        if (!$element instanceof \WH\PhpWord\Element\Link) {
             return;
         }
 

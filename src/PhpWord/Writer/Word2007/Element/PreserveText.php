@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\Word2007\Element;
+namespace WH\PhpWord\Writer\Word2007\Element;
 
 /**
  * PreserveText element writer
@@ -31,7 +31,7 @@ class PreserveText extends Text
     {
         $xmlWriter = $this->getXmlWriter();
         $element = $this->getElement();
-        if (!$element instanceof \PhpOffice\PhpWord\Element\PreserveText) {
+        if (!$element instanceof \WH\PhpWord\Element\PreserveText) {
             return;
         }
 

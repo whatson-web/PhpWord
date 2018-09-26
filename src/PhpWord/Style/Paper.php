@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Style;
+namespace WH\PhpWord\Style;
 
-use PhpOffice\PhpWord\Shared\Converter;
+use WH\PhpWord\Shared\Converter;
 
 /**
  * Paper size from ISO/IEC 29500-1:2012 pg. 1656-1657

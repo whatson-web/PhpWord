@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\RTF\Element;
+namespace WH\PhpWord\Writer\RTF\Element;
 
 /**
  * Text element RTF writer
@@ -31,7 +31,7 @@ class Text extends AbstractElement
      */
     public function write()
     {
-        /** @var \PhpOffice\PhpWord\Element\Text $element Type hint */
+        /** @var \WH\PhpWord\Element\Text $element Type hint */
         $element = $this->element;
         $elementClass = str_replace('\\Writer\\RTF', '', get_class($this));
         if (!$element instanceof $elementClass || !is_string($element->getText())) {

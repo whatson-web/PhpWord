@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\RTF\Style;
+namespace WH\PhpWord\Writer\RTF\Style;
 
 /**
  * Line numbering style writer
@@ -30,13 +30,13 @@ class Tab extends AbstractStyle
     public function write()
     {
         $style = $this->getStyle();
-        if (!$style instanceof \PhpOffice\PhpWord\Style\Tab) {
+        if (!$style instanceof \WH\PhpWord\Style\Tab) {
             return;
         }
         $tabs = array(
-            \PhpOffice\PhpWord\Style\Tab::TAB_STOP_RIGHT   => '\tqr',
-            \PhpOffice\PhpWord\Style\Tab::TAB_STOP_CENTER  => '\tqc',
-            \PhpOffice\PhpWord\Style\Tab::TAB_STOP_DECIMAL => '\tqdec',
+            \WH\PhpWord\Style\Tab::TAB_STOP_RIGHT   => '\tqr',
+            \WH\PhpWord\Style\Tab::TAB_STOP_CENTER  => '\tqc',
+            \WH\PhpWord\Style\Tab::TAB_STOP_DECIMAL => '\tqdec',
         );
         $content = '';
         if (isset($tabs[$style->getType()])) {

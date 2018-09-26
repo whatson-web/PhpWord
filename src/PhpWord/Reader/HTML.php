@@ -15,10 +15,10 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Reader;
+namespace WH\PhpWord\Reader;
 
-use PhpOffice\PhpWord\PhpWord;
-use PhpOffice\PhpWord\Shared\Html as HTMLParser;
+use WH\PhpWord\PhpWord;
+use WH\PhpWord\Shared\Html as HTMLParser;
 
 /**
  * HTML Reader class
@@ -34,7 +34,7 @@ class HTML extends AbstractReader implements ReaderInterface
      *
      * @throws \Exception
      *
-     * @return \PhpOffice\PhpWord\PhpWord
+     * @return \WH\PhpWord\PhpWord
      */
     public function load($docFile)
     {

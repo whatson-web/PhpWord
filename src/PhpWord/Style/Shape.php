@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Style;
+namespace WH\PhpWord\Style;
 
 /**
  * Shape style
@@ -50,35 +50,35 @@ class Shape extends AbstractStyle
     /**
      * Frame
      *
-     * @var \PhpOffice\PhpWord\Style\Frame
+     * @var \WH\PhpWord\Style\Frame
      */
     private $frame;
 
     /**
      * Fill
      *
-     * @var \PhpOffice\PhpWord\Style\Fill
+     * @var \WH\PhpWord\Style\Fill
      */
     private $fill;
 
     /**
      * Outline
      *
-     * @var \PhpOffice\PhpWord\Style\Outline
+     * @var \WH\PhpWord\Style\Outline
      */
     private $outline;
 
     /**
      * Shadow
      *
-     * @var \PhpOffice\PhpWord\Style\Shadow
+     * @var \WH\PhpWord\Style\Shadow
      */
     private $shadow;
 
     /**
      * 3D extrusion
      *
-     * @var \PhpOffice\PhpWord\Style\Extrusion
+     * @var \WH\PhpWord\Style\Extrusion
      */
     private $extrusion;
 
@@ -141,7 +141,7 @@ class Shape extends AbstractStyle
     /**
      * Get frame
      *
-     * @return \PhpOffice\PhpWord\Style\Frame
+     * @return \WH\PhpWord\Style\Frame
      */
     public function getFrame()
     {
@@ -164,7 +164,7 @@ class Shape extends AbstractStyle
     /**
      * Get fill
      *
-     * @return \PhpOffice\PhpWord\Style\Fill
+     * @return \WH\PhpWord\Style\Fill
      */
     public function getFill()
     {
@@ -187,7 +187,7 @@ class Shape extends AbstractStyle
     /**
      * Get outline
      *
-     * @return \PhpOffice\PhpWord\Style\Outline
+     * @return \WH\PhpWord\Style\Outline
      */
     public function getOutline()
     {
@@ -210,7 +210,7 @@ class Shape extends AbstractStyle
     /**
      * Get shadow
      *
-     * @return \PhpOffice\PhpWord\Style\Shadow
+     * @return \WH\PhpWord\Style\Shadow
      */
     public function getShadow()
     {
@@ -233,7 +233,7 @@ class Shape extends AbstractStyle
     /**
      * Get 3D extrusion
      *
-     * @return \PhpOffice\PhpWord\Style\Extrusion
+     * @return \WH\PhpWord\Style\Extrusion
      */
     public function getExtrusion()
     {

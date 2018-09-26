@@ -15,11 +15,11 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Reader\Word2007;
+namespace WH\PhpWord\Reader\Word2007;
 
 use PhpOffice\Common\XMLReader;
-use PhpOffice\PhpWord\PhpWord;
-use PhpOffice\PhpWord\Style\Language;
+use WH\PhpWord\PhpWord;
+use WH\PhpWord\Style\Language;
 
 /**
  * Styles reader
@@ -31,7 +31,7 @@ class Styles extends AbstractPart
     /**
      * Read styles.xml.
      *
-     * @param \PhpOffice\PhpWord\PhpWord $phpWord
+     * @param \WH\PhpWord\PhpWord $phpWord
      */
     public function read(PhpWord $phpWord)
     {

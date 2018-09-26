@@ -14,13 +14,13 @@
  * @copyright   2010-2017 PHPWord contributors
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
-namespace WH\PhpOffice\PhpWord;
-use PhpOffice\PhpWord\Escaper\RegExp;
-use PhpOffice\PhpWord\Escaper\Xml;
-use PhpOffice\PhpWord\Exception\CopyFileException;
-use PhpOffice\PhpWord\Exception\CreateTemporaryFileException;
-use PhpOffice\PhpWord\Exception\Exception;
-use PhpOffice\PhpWord\Shared\ZipArchive;
+namespace WH\PhpWord;
+use WH\PhpWord\Escaper\RegExp;
+use WH\PhpWord\Escaper\Xml;
+use WH\PhpWord\Exception\CopyFileException;
+use WH\PhpWord\Exception\CreateTemporaryFileException;
+use WH\PhpWord\Exception\Exception;
+use WH\PhpWord\Shared\ZipArchive;
 class TemplateProcessor
 {
     const MAXIMUM_REPLACEMENTS_DEFAULT = -1;
@@ -68,8 +68,8 @@ class TemplateProcessor
      *
      * @param string $documentTemplate The fully qualified template filename
      *
-     * @throws \PhpOffice\PhpWord\Exception\CreateTemporaryFileException
-     * @throws \PhpOffice\PhpWord\Exception\CopyFileException
+     * @throws \WH\PhpWord\Exception\CreateTemporaryFileException
+     * @throws \WH\PhpWord\Exception\CopyFileException
      */
     public function __construct($documentTemplate)
     {
@@ -106,7 +106,7 @@ class TemplateProcessor
      * @param string $xml
      * @param \XSLTProcessor $xsltProcessor
      *
-     * @throws \PhpOffice\PhpWord\Exception\Exception
+     * @throws \WH\PhpWord\Exception\Exception
      *
      * @return string
      */
@@ -151,7 +151,7 @@ class TemplateProcessor
      * @param array $xslOptions
      * @param string $xslOptionsUri
      *
-     * @throws \PhpOffice\PhpWord\Exception\Exception
+     * @throws \WH\PhpWord\Exception\Exception
      */
     public function applyXslStyleSheet($xslDomDocument, $xslOptions = array(), $xslOptionsUri = '')
     {
@@ -337,7 +337,7 @@ class TemplateProcessor
      * @param bool $incrementVariables
      * @param bool $throwException
      *
-     * @throws \PhpOffice\PhpWord\Exception\Exception
+     * @throws \WH\PhpWord\Exception\Exception
      * @return string|false Returns the row cloned or false if the $search macro is not found
      */
     private function processRow(
@@ -391,7 +391,7 @@ class TemplateProcessor
      * @param bool $incrementVariables
      * @param bool $throwException
      *
-     * @throws \PhpOffice\PhpWord\Exception\Exception
+     * @throws \WH\PhpWord\Exception\Exception
      * @return mixed Returns true if row cloned succesfully or or false if the $search macro is not found
      */
     public function cloneRow(
@@ -452,7 +452,7 @@ class TemplateProcessor
      * @param bool $incrementVariables
      * @param bool $throwException
      *
-     * @throws \PhpOffice\PhpWord\Exception\Exception
+     * @throws \WH\PhpWord\Exception\Exception
      * @return mixed The cloned string if successful, false ($blockname not found) or Null (no paragraph found)
      */
     private function processBlock(
@@ -532,7 +532,7 @@ class TemplateProcessor
      * @param bool $incrementVariables true by default (variables get appended #1, #2 inside the cloned blocks)
      * @param bool $throwException false by default (it then returns false or null on errors)
      *
-     * @throws \PhpOffice\PhpWord\Exception\Exception
+     * @throws \WH\PhpWord\Exception\Exception
      * @return mixed True if successful, false ($blockname not found) or null (no paragraph found)
      */
     public function cloneBlock(
@@ -760,7 +760,7 @@ class TemplateProcessor
     /**
      * Saves the result document.
      *
-     * @throws \PhpOffice\PhpWord\Exception\Exception
+     * @throws \WH\PhpWord\Exception\Exception
      *
      * @return string The filename of the document
      */
@@ -914,7 +914,7 @@ class TemplateProcessor
      * @param int $offset Do not look from the beginning, but starting at $offset
      * @param bool $throwException
      *
-     * @throws \PhpOffice\PhpWord\Exception\Exception
+     * @throws \WH\PhpWord\Exception\Exception
      * @return int Zero if not found (due to the nature of xml, your document never starts at 0)
      */
     protected function findOpenTagLeft(&$searchString, $tag, $offset = 0, $throwException = false)
@@ -949,7 +949,7 @@ class TemplateProcessor
      * @param int $offset Do not look from the beginning, but starting at $offset
      * @param bool $throwException
      *
-     * @throws \PhpOffice\PhpWord\Exception\Exception
+     * @throws \WH\PhpWord\Exception\Exception
      * @return int Zero if not found (due to the nature of xml, your document never starts at 0)
      */
     protected function findOpenTagRight(&$searchString, $tag, $offset = 0, $throwException = false)

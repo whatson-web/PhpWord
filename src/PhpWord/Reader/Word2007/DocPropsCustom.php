@@ -15,11 +15,11 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Reader\Word2007;
+namespace WH\PhpWord\Reader\Word2007;
 
 use PhpOffice\Common\XMLReader;
-use PhpOffice\PhpWord\Metadata\DocInfo;
-use PhpOffice\PhpWord\PhpWord;
+use WH\PhpWord\Metadata\DocInfo;
+use WH\PhpWord\PhpWord;
 
 /**
  * Custom properties reader
@@ -31,7 +31,7 @@ class DocPropsCustom extends AbstractPart
     /**
      * Read custom document properties.
      *
-     * @param \PhpOffice\PhpWord\PhpWord $phpWord
+     * @param \WH\PhpWord\PhpWord $phpWord
      */
     public function read(PhpWord $phpWord)
     {

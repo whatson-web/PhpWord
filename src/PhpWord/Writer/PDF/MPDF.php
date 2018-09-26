@@ -15,11 +15,11 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\PDF;
+namespace WH\PhpWord\Writer\PDF;
 
-use PhpOffice\PhpWord\PhpWord;
-use PhpOffice\PhpWord\Settings;
-use PhpOffice\PhpWord\Writer\WriterInterface;
+use WH\PhpWord\PhpWord;
+use WH\PhpWord\Settings;
+use WH\PhpWord\Writer\WriterInterface;
 
 /**
  * MPDF writer

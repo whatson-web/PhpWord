@@ -95,7 +95,7 @@ The following is a basic usage example of the PHPWord library.
 require_once 'bootstrap.php';
 
 // Creating the new document...
-$phpWord = new \PhpOffice\PhpWord\PhpWord();
+$phpWord = new \WH\PhpWord\PhpWord();
 
 /* Note: any element you append to a document must reside inside of a Section. */
 
@@ -137,7 +137,7 @@ $section->addText(
 );
 
 // Adding Text element with font customized using explicitly created font style object...
-$fontStyle = new \PhpOffice\PhpWord\Style\Font();
+$fontStyle = new \WH\PhpWord\Style\Font();
 $fontStyle->setBold(true);
 $fontStyle->setName('Tahoma');
 $fontStyle->setSize(13);
@@ -145,15 +145,15 @@ $myTextElement = $section->addText('"Believe you can and you\'re halfway there."
 $myTextElement->setFontStyle($fontStyle);
 
 // Saving the document as OOXML file...
-$objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');
+$objWriter = \WH\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');
 $objWriter->save('helloWorld.docx');
 
 // Saving the document as ODF file...
-$objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'ODText');
+$objWriter = \WH\PhpWord\IOFactory::createWriter($phpWord, 'ODText');
 $objWriter->save('helloWorld.odt');
 
 // Saving the document as HTML file...
-$objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'HTML');
+$objWriter = \WH\PhpWord\IOFactory::createWriter($phpWord, 'HTML');
 $objWriter->save('helloWorld.html');
 
 /* Note: we skip RTF, because it's not XML-based and requires a different example. */

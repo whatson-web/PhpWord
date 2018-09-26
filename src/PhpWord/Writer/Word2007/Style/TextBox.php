@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\Writer\Word2007\Style;
+namespace WH\PhpWord\Writer\Word2007\Style;
 
-use PhpOffice\PhpWord\Style\TextBox as TextBoxStyle;
+use WH\PhpWord\Style\TextBox as TextBoxStyle;
 
 /**
  * TextBox style writer

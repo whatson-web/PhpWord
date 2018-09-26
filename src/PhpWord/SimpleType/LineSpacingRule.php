@@ -15,9 +15,9 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace WH\PhpOffice\PhpWord\SimpleType;
+namespace WH\PhpWord\SimpleType;
 
-use PhpOffice\PhpWord\Shared\AbstractEnum;
+use WH\PhpWord\Shared\AbstractEnum;
 
 /**
  * Line Spacing Rule
