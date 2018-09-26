@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpWord\Writer\RTF\Element;
+namespace WH\PhpOffice\PhpWord\Writer\RTF\Element;
 
 use PhpOffice\PhpWord\Writer\HTML\Element\Container as HTMLContainer;
 

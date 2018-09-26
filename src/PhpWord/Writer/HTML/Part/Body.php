@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpWord\Writer\HTML\Part;
+namespace WH\PhpOffice\PhpWord\Writer\HTML\Part;
 
 use PhpOffice\PhpWord\Writer\HTML\Element\Container;
 use PhpOffice\PhpWord\Writer\HTML\Element\TextRun as TextRunWriter;

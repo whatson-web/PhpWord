@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpWord\Shared;
+namespace WH\PhpOffice\PhpWord\Shared;
 
 use PhpOffice\PhpWord\Exception\Exception;
 use PhpOffice\PhpWord\Settings;

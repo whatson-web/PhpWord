@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpWord\Reader\ODText;
+namespace WH\PhpOffice\PhpWord\Reader\ODText;
 
 use PhpOffice\Common\XMLReader;
 use PhpOffice\PhpWord\PhpWord;

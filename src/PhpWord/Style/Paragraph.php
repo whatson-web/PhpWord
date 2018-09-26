@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpWord\Style;
+namespace WH\PhpOffice\PhpWord\Style;
 
 use PhpOffice\Common\Text;
 use PhpOffice\PhpWord\Exception\InvalidStyleException;

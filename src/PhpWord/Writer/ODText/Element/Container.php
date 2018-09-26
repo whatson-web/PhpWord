@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpWord\Writer\ODText\Element;
+namespace WH\PhpOffice\PhpWord\Writer\ODText\Element;
 
 use PhpOffice\PhpWord\Writer\Word2007\Element\Container as Word2007Container;
 

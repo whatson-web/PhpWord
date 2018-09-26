@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpWord\Reader\Word2007;
+namespace WH\PhpOffice\PhpWord\Reader\Word2007;
 
 use PhpOffice\Common\XMLReader;
 use PhpOffice\PhpWord\ComplexType\TrackChangesView;

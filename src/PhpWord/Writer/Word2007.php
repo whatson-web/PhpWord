@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpWord\Writer;
+namespace WH\PhpOffice\PhpWord\Writer;
 
 use PhpOffice\PhpWord\Element\Section;
 use PhpOffice\PhpWord\Media;

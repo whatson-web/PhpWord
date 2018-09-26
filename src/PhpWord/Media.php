@@ -15,7 +15,7 @@
  * @license     http://www.gnu.org/licenses/lgpl.txt LGPL version 3
  */
 
-namespace PhpOffice\PhpWord;
+namespace WH\PhpOffice\PhpWord;
 
 use PhpOffice\PhpWord\Element\Image;
 use PhpOffice\PhpWord\Exception\Exception;
