@@ -86,7 +86,7 @@ class Word2007 extends AbstractReader implements ReaderInterface
      */
     private function readPart(PhpWord $phpWord, $relationships, $partName, $docFile, $xmlFile)
     {
-        $partClass = "PhpOffice\\PhpWord\\Reader\\Word2007\\{$partName}";
+        $partClass = "WH\\PhpWord\\Reader\\Word2007\\{$partName}";
         if (class_exists($partClass)) {
             /** @var \WH\PhpWord\Reader\Word2007\AbstractPart $part Type hint */
             $part = new $partClass($docFile, $xmlFile);

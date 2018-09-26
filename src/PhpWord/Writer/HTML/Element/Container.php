@@ -31,7 +31,7 @@ class Container extends AbstractElement
      *
      * @var string
      */
-    protected $namespace = 'PhpOffice\\PhpWord\\Writer\\HTML\\Element';
+    protected $namespace = 'WH\\PhpWord\\Writer\\HTML\\Element';
 
     /**
      * Write container
@@ -51,7 +51,7 @@ class Container extends AbstractElement
         $elements = $container->getElements();
         foreach ($elements as $element) {
             $elementClass = get_class($element);
-            $writerClass = str_replace('PhpOffice\\PhpWord\\Element', $this->namespace, $elementClass);
+            $writerClass = str_replace('WH\\PhpWord\\Element', $this->namespace, $elementClass);
             if (class_exists($writerClass)) {
                 /** @var \WH\PhpWord\Writer\HTML\Element\AbstractElement $writer Type hint */
                 $writer = new $writerClass($this->parentWriter, $element, $withoutP);

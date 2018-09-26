@@ -31,5 +31,5 @@ class Container extends Word2007Container
      *
      * @var string
      */
-    protected $namespace = 'PhpOffice\\PhpWord\\Writer\\ODText\\Element';
+    protected $namespace = 'WH\\PhpWord\\Writer\\ODText\\Element';
 }

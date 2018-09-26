@@ -50,7 +50,7 @@ class HTML extends AbstractWriter implements WriterInterface
 
         $this->parts = array('Head', 'Body');
         foreach ($this->parts as $partName) {
-            $partClass = 'PhpOffice\\PhpWord\\Writer\\HTML\\Part\\' . $partName;
+            $partClass = 'WH\\PhpWord\\Writer\\HTML\\Part\\' . $partName;
             if (class_exists($partClass)) {
                 /** @var \WH\PhpWord\Writer\HTML\Part\AbstractPart $part Type hint */
                 $part = new $partClass();

@@ -154,7 +154,7 @@ class Content extends AbstractPart
 
         $this->writeTextStyles($xmlWriter);
         foreach ($this->autoStyles as $element => $styles) {
-            $writerClass = 'PhpOffice\\PhpWord\\Writer\\ODText\\Style\\' . $element;
+            $writerClass = 'WH\\PhpWord\\Writer\\ODText\\Style\\' . $element;
             foreach ($styles as $style) {
                 /** @var \WH\PhpWord\Writer\ODText\Style\AbstractStyle $styleWriter Type hint */
                 $styleWriter = new $writerClass($xmlWriter, $style);

@@ -31,5 +31,5 @@ class Container extends HTMLContainer
      *
      * @var string
      */
-    protected $namespace = 'PhpOffice\\PhpWord\\Writer\\RTF\\Element';
+    protected $namespace = 'WH\\PhpWord\\Writer\\RTF\\Element';
 }

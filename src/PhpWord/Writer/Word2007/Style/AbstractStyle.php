@@ -113,7 +113,7 @@ abstract class AbstractStyle
     protected function writeChildStyle(XMLWriter $xmlWriter, $name, $value)
     {
         if ($value !== null) {
-            $class = 'PhpOffice\\PhpWord\\Writer\\Word2007\\Style\\' . $name;
+            $class = 'WH\\PhpWord\\Writer\\Word2007\\Style\\' . $name;
 
             /** @var \WH\PhpWord\Writer\Word2007\Style\AbstractStyle $writer */
             $writer = new $class($xmlWriter, $value);

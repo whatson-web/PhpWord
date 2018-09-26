@@ -187,7 +187,7 @@ abstract class AbstractElement
     private function writeTextStyle($styleType)
     {
         $method = "get{$styleType}Style";
-        $class = "PhpOffice\\PhpWord\\Writer\\Word2007\\Style\\{$styleType}";
+        $class = "WH\\PhpWord\\Writer\\Word2007\\Style\\{$styleType}";
         $styleObject = $this->element->$method();
 
         /** @var \WH\PhpWord\Writer\Word2007\Style\AbstractStyle $styleWriter Type Hint */

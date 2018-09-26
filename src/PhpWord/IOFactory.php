@@ -39,7 +39,7 @@ abstract class IOFactory
             throw new Exception("\"{$name}\" is not a valid writer.");
         }
 
-        $fqName = "PhpOffice\\PhpWord\\Writer\\{$name}";
+        $fqName = "WH\\PhpWord\\Writer\\{$name}";
 
         return new $fqName($phpWord);
     }
@@ -71,7 +71,7 @@ abstract class IOFactory
      */
     private static function createObject($type, $name, $phpWord = null)
     {
-        $class = "PhpOffice\\PhpWord\\{$type}\\{$name}";
+        $class = "WH\\PhpWord\\{$type}\\{$name}";
         if (class_exists($class) && self::isConcreteClass($class)) {
             return new $class($phpWord);
         }

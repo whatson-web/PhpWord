@@ -34,7 +34,7 @@ class Container extends AbstractElement
      *
      * @var string
      */
-    protected $namespace = 'PhpOffice\\PhpWord\\Writer\\Word2007\\Element';
+    protected $namespace = 'WH\\PhpWord\\Writer\\Word2007\\Element';
 
     /**
      * Write element.
